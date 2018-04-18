@@ -3,8 +3,8 @@ import os
 
 filename = "a.jpg"
 ftp=ftplib.FTP()
-ftp.connect("168.188.39.232",111)
-ftp.login("pi","123123")
+ftp.connect("server ip",port number)
+ftp.login("id","password")
 ftp.cwd("./")
 os.chdir(r"./")
 myfile = open(filename,'rb')
