@@ -3,8 +3,8 @@ import os
 
 filename = "a.jpg"
 ftp=ftplib.FTP()
-ftp.connect("168.188.39.232",111)
-ftp.login("pi","123123")
+ftp.connect("your ip ",port number)
+ftp.login("id","password")
 ftp.cwd("./")
 fd = open("./" + filename,'wb')
 ftp.retrbinary("RETR " + filename, fd.write)
